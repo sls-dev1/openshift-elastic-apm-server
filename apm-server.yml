@@ -337,15 +337,15 @@ output.elasticsearch:
   hosts: ["localhost:9200"]
 
   # Boolean flag to enable or disable the output module.
-  #enabled: true
+  enabled: true
 
   # Set gzip compression level.
-  #compression_level: 0
+  compression_level: 0
 
   # Optional protocol and basic auth credentials.
   #protocol: "https"
-  #username: "elastic"
-  #password: "changeme"
+  username: "elastic"
+  password: "changeme"
 
   # Dictionary of HTTP parameters to pass within the url with index operations.
   #parameters:
@@ -353,7 +353,7 @@ output.elasticsearch:
     #param2: value2
 
   # Number of workers per Elasticsearch host.
-  #worker: 1
+  worker: 1
 
   # By using the configuration below, apm documents are stored to separate indices,
   # depending on their `processor.event`:
