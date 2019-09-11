@@ -77,7 +77,7 @@ apm-server:
 
   #rum:
     # To enable real user monitoring (RUM) support set this to true.
-    #enabled: false
+    #enabled: true
 
     #event_rate:
 
@@ -115,17 +115,17 @@ apm-server:
       # Source maps are always fetched from Elasticsearch, by default using the output.elasticsearch configuration.
       # A different instance must be configured when using any other output.
       # This setting only affects sourcemap reads - the output determines where sourcemaps are written.
-      elasticsearch:
+      #elasticsearch:
         # Array of hosts to connect to.
         # Scheme and port can be left out and will be set to the default (http and 9200)
         # In case you specify and additional path, the scheme is required: http://localhost:9200/path
         # IPv6 addresses should always be defined as: https://[2001:db8::1]:9200
-        hosts: ["localhost:9200"]
+        #hosts: ["localhost:9200"]
 
         # Optional protocol and basic auth credentials.
-        protocol: "https"
-        username: "elastic"
-        password: "changeme"
+        #protocol: "https"
+        #username: "elastic"
+        #password: "changeme"
 
       # The `cache.expiration` determines how long a source map should be cached before fetching it again from Elasticsearch.
       # Note that values configured without a time unit will be interpreted as seconds.
@@ -334,7 +334,7 @@ output.elasticsearch:
   # Scheme and port can be left out and will be set to the default (http and 9200)
   # In case you specify and additional path, the scheme is required: http://localhost:9200/path
   # IPv6 addresses should always be defined as: https://[2001:db8::1]:9200
-  hosts: ["elasticsearch:9200"]
+  hosts: ["localhost:9200"]
 
   # Boolean flag to enable or disable the output module.
   #enabled: true
