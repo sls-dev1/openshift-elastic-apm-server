@@ -1,4 +1,5 @@
-From docker.elastic.co/apm/apm-server:7.3.1
+#From docker.elastic.co/apm/apm-server:7.3.1
+From docker.elastic.co/apm/apm-server-oss:7.3.1
 
 ENV APM_HOME /usr/share/apm-server
 
