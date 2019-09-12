@@ -27,6 +27,7 @@ output.elasticsearch:
   protocol: "https"
   #username: "elastic"
   #password: "changeme"
+  ssl.verification_mode: none
 
   indices:
     - index: "apm-%{[beat.version]}-sourcemap"
