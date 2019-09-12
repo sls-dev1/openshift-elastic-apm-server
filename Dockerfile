@@ -16,4 +16,4 @@ RUN \
 
 USER apm-server
 
-CMD ["--strict.perms=false","--e"]
+CMD ["--strict.perms=false","-e"]
