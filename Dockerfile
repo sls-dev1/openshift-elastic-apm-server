@@ -3,6 +3,7 @@ From docker.elastic.co/apm/apm-server:7.3.1
 ENV APM_HOME  /usr/share/apm-server
 
 VOLUME ["${APM_HOME}"]
+WORKDIR $APM_HOME
 
 COPY apm-server.yml ${APM_HOME}/apm-server.yml
 
