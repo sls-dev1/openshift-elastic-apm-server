@@ -6,7 +6,7 @@ ENV APM_HOME /usr/share/apm-server
 #VOLUME ["/usr/share/"]
 #WORKDIR $APM_HOME
 
-COPY apm-server.yml ${APM_HOME}/apm-server.yml
+COPY apm-server-2.yml ${APM_HOME}/apm-server.yml
 
 USER root
 
