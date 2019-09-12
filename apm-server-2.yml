@@ -25,8 +25,8 @@ output.elasticsearch:
   
   # Optional protocol and basic auth credentials.
   protocol: "https"
-  #username: "elastic"
-  #password: "changeme"
+  username: "elastic"
+  password: "changeme"
   ssl.verification_mode: none
 
   indices:
