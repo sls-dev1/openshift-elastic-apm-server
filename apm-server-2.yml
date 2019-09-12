@@ -22,6 +22,11 @@ output.elasticsearch:
   # In case you specify and additional path, the scheme is required: http://localhost:9200/path
   # IPv6 addresses should always be defined as: https://[2001:db8::1]:9200
   hosts: ["logging-es:9200"]
+  
+  # Optional protocol and basic auth credentials.
+  protocol: "https"
+  #username: "elastic"
+  #password: "changeme"
 
   indices:
     - index: "apm-%{[beat.version]}-sourcemap"
