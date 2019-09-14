@@ -27,6 +27,7 @@ output.elasticsearch:
   protocol: "https"
   username: "elastic"
   password: "changeme"
+  ssl.enabled: false
   ssl.verification_mode: none
   ssl.certificate_authorities: 
     - /etc/pki/ca
