@@ -24,10 +24,10 @@ output.elasticsearch:
   hosts: ["logging-es:9200"]
   
   # Optional protocol and basic auth credentials.
-  #protocol: "https"
+  protocol: "https"
   #username: "elastic"
   #password: "changeme"
-  ssl.enabled: false
+  ssl.enabled: true
   ssl.verification_mode: none
   #ssl.certificate_authorities: 
   #  - /etc/pki/ca
