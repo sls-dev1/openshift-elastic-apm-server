@@ -29,10 +29,10 @@ output.elasticsearch:
   #password: "changeme"
   ssl.enabled: true
   ssl.verification_mode: none
-  #ssl.certificate_authorities: 
-  #  - /etc/pki/ca
-  #ssl.certificate: "/etc/pki/cert" 
-  #ssl.key: "/etc/pki/key" 
+  ssl.certificate_authorities: 
+    - /etc/pki/ca
+  ssl.certificate: "/etc/pki/cert" 
+  ssl.key: "/etc/pki/key" 
 
   indices:
     - index: "apm-%{[beat.version]}-sourcemap"
