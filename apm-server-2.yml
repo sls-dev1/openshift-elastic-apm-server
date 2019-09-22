@@ -1,6 +1,21 @@
 apm-server:
   # Defines the host and port the server is listening on.  use "unix:/path/to.sock" to listen on a unix domain socket.
   host: "localhost:8200"
+  
+  # A pipeline is a definition of processors applied to documents when ingesting them to Elasticsearch.
+  # Using pipelines involves two steps:
+  # (1) registering a pipeline
+  # (2) applying a pipeline during data ingestion (see `output.elasticsearch.pipeline`)
+  #
+  # You can manually register a pipeline, or use this configuration option to ensure
+  # the pipeline is loaded and registered at the configured Elasticsearch instances.
+  # Find the default pipeline configuration at `ingest/pipeline/definition.json`.
+  # Automatic pipeline registration requires the output.elasticsearch` to be enabled and configured.
+  register.ingest.pipeline:
+    # Registers APM pipeline definition in Elasticsearch on APM Server startup. Defaults to true.
+    enabled: false
+    # Overwrites existing APM pipeline definition in Elasticsearch. Defaults to false.
+    #overwrite: false
 
 #==================== Elasticsearch template setting ==========================
 
